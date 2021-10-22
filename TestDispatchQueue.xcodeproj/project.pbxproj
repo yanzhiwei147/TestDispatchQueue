@@ -15,6 +15,9 @@
 		83E6A21B2722A98D00E316A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E6A2192722A98D00E316A6 /* LaunchScreen.storyboard */; };
 		83E6A21E2722A98D00E316A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6A21D2722A98D00E316A6 /* main.m */; };
 		83E6A2282722A98E00E316A6 /* TestDispatchQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6A2272722A98E00E316A6 /* TestDispatchQueueTests.m */; };
+		83E6A2352722AA1A00E316A6 /* KwaiDispatchQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6A2342722AA1A00E316A6 /* KwaiDispatchQueue.m */; };
+		83E6A23B2722C47700E316A6 /* KwaiDispatchQueue+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6A23A2722C47700E316A6 /* KwaiDispatchQueue+Private.m */; };
+		83E6A23D2722C60400E316A6 /* TestDispatchQueue2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E6A23C2722C60400E316A6 /* TestDispatchQueue2Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		83E6A2232722A98E00E316A6 /* TestDispatchQueueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDispatchQueueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E6A2272722A98E00E316A6 /* TestDispatchQueueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchQueueTests.m; sourceTree = "<group>"; };
 		83E6A2292722A98E00E316A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E6A2332722AA1A00E316A6 /* KwaiDispatchQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KwaiDispatchQueue.h; sourceTree = "<group>"; };
+		83E6A2342722AA1A00E316A6 /* KwaiDispatchQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KwaiDispatchQueue.m; sourceTree = "<group>"; };
+		83E6A2392722C47700E316A6 /* KwaiDispatchQueue+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KwaiDispatchQueue+Private.h"; sourceTree = "<group>"; };
+		83E6A23A2722C47700E316A6 /* KwaiDispatchQueue+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KwaiDispatchQueue+Private.m"; sourceTree = "<group>"; };
+		83E6A23C2722C60400E316A6 /* TestDispatchQueue2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDispatchQueue2Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 		83E6A1FF2722A98400E316A6 = {
 			isa = PBXGroup;
 			children = (
+				83E6A23F2722C62B00E316A6 /* Source */,
 				83E6A20A2722A98400E316A6 /* TestDispatchQueue */,
 				83E6A2262722A98E00E316A6 /* TestDispatchQueueTests */,
 				83E6A2092722A98400E316A6 /* Products */,
@@ -102,10 +111,54 @@
 		83E6A2262722A98E00E316A6 /* TestDispatchQueueTests */ = {
 			isa = PBXGroup;
 			children = (
-				83E6A2272722A98E00E316A6 /* TestDispatchQueueTests.m */,
+				83E6A2412722C64D00E316A6 /* src */,
+				83E6A2402722C64300E316A6 /* include */,
 				83E6A2292722A98E00E316A6 /* Info.plist */,
 			);
 			path = TestDispatchQueueTests;
+			sourceTree = "<group>";
+		};
+		83E6A2322722AA0300E316A6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				83E6A2392722C47700E316A6 /* KwaiDispatchQueue+Private.h */,
+				83E6A23A2722C47700E316A6 /* KwaiDispatchQueue+Private.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		83E6A23E2722C61A00E316A6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				83E6A2332722AA1A00E316A6 /* KwaiDispatchQueue.h */,
+				83E6A2342722AA1A00E316A6 /* KwaiDispatchQueue.m */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		83E6A23F2722C62B00E316A6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				83E6A23E2722C61A00E316A6 /* include */,
+				83E6A2322722AA0300E316A6 /* src */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		83E6A2402722C64300E316A6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				83E6A2272722A98E00E316A6 /* TestDispatchQueueTests.m */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		83E6A2412722C64D00E316A6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				83E6A23C2722C60400E316A6 /* TestDispatchQueue2Tests.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +264,9 @@
 				83E6A2132722A98400E316A6 /* ViewController.m in Sources */,
 				83E6A20D2722A98400E316A6 /* AppDelegate.m in Sources */,
 				83E6A21E2722A98D00E316A6 /* main.m in Sources */,
+				83E6A23B2722C47700E316A6 /* KwaiDispatchQueue+Private.m in Sources */,
 				83E6A2102722A98400E316A6 /* SceneDelegate.m in Sources */,
+				83E6A2352722AA1A00E316A6 /* KwaiDispatchQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E6A23D2722C60400E316A6 /* TestDispatchQueue2Tests.m in Sources */,
 				83E6A2282722A98E00E316A6 /* TestDispatchQueueTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
